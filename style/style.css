@@ -6,6 +6,10 @@
   font-weight: 400;
   font-style: normal;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 .header{
   max-width: 1160px;
   margin: 0 auto;
@@ -99,6 +103,7 @@
 .section-title{
   font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .kinder-card{
@@ -172,11 +177,89 @@
 }
 
 /* our story releted style */
+.our-stories-section{
+  background: url(../assets/bg.png), linear-gradient(rgba(255, 255, 255, 1), rgba(254, 163, 1, 1));
+}
+.our-stories{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 60px 0px;
+  background: url(../assets/bg.png);
+}
 .stories-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+#stories-box-1{
+  grid-row: span 2;
+  border-radius: 16px;
+}
+.stories-box{
+  gap: 0px;
+  background: #fff;
+  box-shadow: 0px 0px 10px  0px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+.box-img-1{
+  border-radius: 16px 16px 0px 0px ;
+}
+.stories-containt-box{
+  background: #fff;
+  padding: 0px 40px 40px 40px;
+  margin-top: -15px;
+  border-radius: 16px;
+}
+.box-1-title{
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+.box-btn-1{
+  background: #3CD8E8;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  padding: 15px 20px;
+  margin-top: -100px;
+}
+.box-img{
+  border-radius: 16px 16px 0px 0px;
+}
+.stories-containt{
+  padding: 0px 40px 20px 40px;
+  margin-top: -18px;
+  
+}
+.story-title{
+  margin-top: 20px;
+  font-size: 16px;
+}
+.story-btn{
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  background: #95B226;
+}
+.story-btn-two{
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  background: #5D58F0;
+}
+
+.footer{
+  background: url(../assets/bg.png), linear-gradient(rgba(196, 196, 196, 1),rgba(254, 163, 1, 0.3));
+}
+.section{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 
 
 
@@ -219,4 +302,31 @@
     display: none;
   }
 
+  /* our story section */
+  .stories-container{
+    grid-template-columns: repeat(2, 50%);
+    grid-area: 10px;
+    
+  }
+  #stories-box-1{
+    display: none;
+  }
+  .our-stories{
+    padding: 40px 20px;
+  }
+  .stories-containt{
+    padding: 0px 10px 10px 15px;
+  }
+  .story-title{
+    font-size: 14px;
+  }
+  .box-img{
+    width: 100%;
+  }
+  .story-btn{
+    font-size: 9px;
+  }
+  .story-btn-two{
+    font-size: 9px;
+  }
 }
