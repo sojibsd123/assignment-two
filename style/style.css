@@ -13,6 +13,7 @@
 .header{
   max-width: 1160px;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 /* Common releted style */
@@ -36,6 +37,9 @@
 .black-color{
   color: #000;
 }
+.new-color{
+  color: #05D4DF;
+}
 .beguni-color{
   color:#8700FF;
 }
@@ -49,10 +53,14 @@
   list-style: none;
   display: flex;
 }
+.mobile-menu{
+  display: none;
+}
 .nav-item{
   text-decoration: none;
   margin-right: 30px;
 }
+
 .btn-primary{
   font-size: 17px;
   font-weight: 400;
@@ -87,6 +95,7 @@
   background-color: black;
   border-radius: 12px;
   border: none;
+  margin-top: 20px;
 }
 .banner-containt .banner-img{
   width: 100%;
@@ -179,6 +188,8 @@
 /* our story releted style */
 .our-stories-section{
   background: url(../assets/bg.png), linear-gradient(rgba(255, 255, 255, 1), rgba(254, 163, 1, 1));
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .our-stories{
   max-width: 1140px;
@@ -251,13 +262,54 @@
   color: #fff;
   background: #5D58F0;
 }
+.button-area{
+  margin-top: 40px;
+  text-align: center;
+}
 
 .footer{
-  background: url(../assets/bg.png), linear-gradient(rgba(196, 196, 196, 1),rgba(254, 163, 1, 0.3));
+  background: #01ACFD;
 }
-.section{
+.footer-section{
   max-width: 1140px;
   margin: 0 auto;
+  padding: 60px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 80px;
+  
+}
+.footer-img{
+  
+  margin-left: -8px;
+}
+.foot-desc{
+  font-size: .8rem;
+  color: #fff;
+  margin-top: 20px;
+}
+.foot-title{
+  font-size: 1.4rem;
+  color: #fff;
+}
+.footer-menu{
+  list-style: none;
+  margin-top: 20px;
+}
+.footer-menu-item{
+  text-align: center;
+  
+}
+.footer-item{
+  margin-bottom: 20px;
+}
+.footer-link{
+  color: #fff;
+  text-decoration: none;
+}
+.footer-icon{
+  margin-top: 20px;
 }
 
 
@@ -268,6 +320,21 @@
 
 /* media query */
 @media screen and (max-width:576px){
+  /* heder section */
+  .header{
+    padding: 20px 20px;
+  }
+  .navbar-items{
+    display: none;
+  }
+  .btn-primary{
+    display: none;
+  }
+  .mobile-menu{
+    display: block;
+    font-size: 1.5rem;
+  }
+
 
   /* banner releted style */
   .main{
@@ -287,6 +354,7 @@
   }
 
 
+
   /* kinder-info  */
   .kinder-info{
     padding: 40px 0px;
@@ -302,11 +370,11 @@
     display: none;
   }
 
+
   /* our story section */
   .stories-container{
     grid-template-columns: repeat(2, 50%);
     grid-area: 10px;
-    
   }
   #stories-box-1{
     display: none;
@@ -328,5 +396,20 @@
   }
   .story-btn-two{
     font-size: 9px;
+  }
+  .button-area{
+    display: none;
+  }
+  /* footer section */
+  .footer-section{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  .footer-menu-item{
+    text-align: left;
+  }
+  .footer-item{
+    margin-bottom: 5px;
   }
 }
