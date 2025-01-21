@@ -23,6 +23,18 @@
 .primary-color{
   background-color: #FEA301;
 }
+.orange-color{
+  color:#F0AA00 ;
+}
+.skyblue-color{
+  color: #01ACFD;
+}
+.black-color{
+  color: #000;
+}
+.beguni-color{
+  color:#8700FF;
+}
 
 /* navbar releted style */
 .navbar{
@@ -76,18 +88,135 @@
   width: 100%;
 }
 
+/* kinder info releted style */
+.kinder-info{
+  padding: 60px 0px;
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section-title{
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.kinder-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 30px;
+}
+.card-item-1{
+  padding: 40px 52px;
+  text-align: center;
+  justify-content: space-between;
+  background: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 0));
+  box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+.card-title{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.card-desc{
+  font-size: 16px;
+  color: #808080;
+  margin-bottom: 30px;
+}
+.card-btn{
+  font-size: 18px;
+  border: none;
+  padding: 0px 0px;
+  background: none;
+}
+.card-item-2{
+  padding: 40px 52px;
+  text-align: center;
+  justify-content: space-between;
+  background: linear-gradient(rgba(255, 244, 220, 1), rgba(255, 255, 255, 0));
+  box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  stroke: rgba(255, 244, 220, 1);
+}
+.card-item-3{
+  padding: 40px 52px;
+  text-align: center;
+  justify-content: space-between;
+  background: linear-gradient(rgba(238, 225, 255, 1), rgba(255, 255, 255, 0));
+  box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+.card-img{
+  width: 140px;
+  height: 140px;
+}
+.card-icon{
+  text-align: center;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.arrow{
+  display: flex;
+  font-size: 1.5rem;
+  background-color: #F0AA00;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* our story releted style */
+.stories-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+
+
+
+
 /* media query */
 @media screen and (max-width:576px){
+
+  /* banner releted style */
+  .main{
+    padding: 0px 20px;
+  }
   .banner-container{
     flex-direction: column-reverse;
-    padding: 0px 20px;
     text-align: center;
   }
   .banner-title{
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 20px;
-}
+  }
   .banner-img{
     width: 100%;
   }
+
+
+  /* kinder-info  */
+  .kinder-info{
+    padding: 40px 0px;
+  }
+  .section-title{
+    font-size: 1.5rem;
+    
+  }
+  .kinder-card{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-icon{
+    display: none;
+  }
+
+}
