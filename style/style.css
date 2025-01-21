@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.header{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* Common releted style */
+.display-flex{
+  display: flex;
+}
+.main{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.primary-color{
+  background-color: #FEA301;
+}
+
+/* navbar releted style */
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-items{
+  list-style: none;
+  display: flex;
+}
+.nav-item{
+  text-decoration: none;
+  margin-right: 30px;
+}
+.btn-primary{
+  font-size: 17px;
+  font-weight: 400;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+}
+
+/* banner releted style */
+.banner-container{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.banner-title{
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.banner-title-power{
+  color: #FEA301;
+}
+.banner-title-vision{
+  color: #01ACFD;
+}
+.btn-banner{
+  padding: 10px 47px;
+  font-size: 20px;
+  color: #fff;
+  background-color: black;
+  border-radius: 12px;
+  border: none;
+}
+.banner-containt .banner-img{
+  width: 100%;
+}
+
+/* media query */
+@media screen and (max-width:576px){
+  .banner-container{
+    flex-direction: column-reverse;
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .banner-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  .banner-img{
+    width: 100%;
+  }
