@@ -69,6 +69,9 @@
   border-radius: 12px;
   color: #fff;
 }
+.btn-primary:hover{
+  background-color: black;
+}
 
 /* banner releted style */
 .banner-container{
@@ -96,6 +99,9 @@
   border-radius: 12px;
   border: none;
   margin-top: 20px;
+}
+.btn-banner:hover{
+  background-color: #FEA301;
 }
 .banner-containt .banner-img{
   width: 100%;
